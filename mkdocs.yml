@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: We Are One - Intranet
+nav:
+  - Accueil: index.md
+  - MKDOCS: mkdocs.md
+  - About: about.md
+  - Tutorials: tutorials.md
+  - Base de données: database.md
+theme: readthedocs
+
