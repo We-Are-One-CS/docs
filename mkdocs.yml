@@ -59,6 +59,8 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/We-Are-One-CS
+    - icon: fontawesome/solid/users
+      link: https://www.weareone.eu.com/
 
 markdown_extensions:
   - admonition
