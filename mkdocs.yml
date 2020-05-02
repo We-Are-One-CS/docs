@@ -1,9 +1,46 @@
 site_name: We Are One - Intranet
 nav:
   - Accueil: index.md
+  - About:
+    - Informations globales: about/about.md
+    - Contributions: about/contributing.md
+    - License: about/license.md
+    - Notes de release: about/release-notes.md
+  - Production:
+    - Production: production/production.md
+    - Checklist de production: production/checklist.md
+  - Deploiement:
+      - Comment deploier le site: deployment/deploy.md
+      - Maintenance du site: deployment/maintenance.md
+      - Server: deployment/server.md
+      - Gestion de possibles conflits: deployment/gestion-conflit.md
+  - Admin:
+    - Pour l'admin: admin/admin.md
+    - Comment utiliser le site admin: admin/how-to-use.md
+    - Role de l'admin: admin/role.md
+  - Base de données:
+    - BDD: database/database.md
+    - PostgreSQL: database/postgres.md
+    - SQL: database/queries.md
+  - Django:
+      - Le framework: django/django.md
+      - Python: django/python.md
+  - Development:
+    - Outils de development: development/tools.md
+    - Branch dev du site: development/dev.md
+    - Executer le server en local: development/run-project-locally.md
+    - Set up du projet: development/set-up-project.md
+    - Comment ajouter une fonctionnalité: development/adding-feature.md
+    - Tests: development/testing.md
+  - Heroku:
+    - L'app weareone-intranet: heroku/app.md
+    - Données: heroku/data.md
+    - Heroku: heroku/heroku.md
+    - Fichiers statiques: heroku/static-files.md
+  - Contact:
+    - Contactez-nous: contact/contact-us.md
   - MKDOCS: mkdocs.md
-  - About: about.md
-  - Tutorials: tutorials.md
-  - Base de données: database.md
-theme: readthedocs
+
+theme:
+  name: material
 
