@@ -1,4 +1,5 @@
-site_name: We Are One - Intranet
+site_name: WAO Intranet documentation
+
 nav:
   - Accueil: index.md
   - About:
@@ -10,10 +11,10 @@ nav:
     - Production: production/production.md
     - Checklist de production: production/checklist.md
   - Deploiement:
-      - Comment deploier le site: deployment/deploy.md
-      - Maintenance du site: deployment/maintenance.md
-      - Server: deployment/server.md
-      - Gestion de possibles conflits: deployment/gestion-conflit.md
+    - Comment deploier le site: deployment/deploy.md
+    - Maintenance du site: deployment/maintenance.md
+    - Server: deployment/server.md
+    - Gestion de possibles conflits: deployment/gestion-conflit.md
   - Admin:
     - Pour l'admin: admin/admin.md
     - Comment utiliser le site admin: admin/how-to-use.md
@@ -23,8 +24,8 @@ nav:
     - PostgreSQL: database/postgres.md
     - SQL: database/queries.md
   - Django:
-      - Le framework: django/django.md
-      - Python: django/python.md
+    - Le framework: django/django.md
+    - Python: django/python.md
   - Development:
     - Outils de development: development/tools.md
     - Branch dev du site: development/dev.md
@@ -43,4 +44,25 @@ nav:
 
 theme:
   name: material
+  language: fr
+  palette:
+    primary: yellow
+    accent: indigo
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
 
+repo_name: We-Are-One-CS/wao-docs
+repo_url: https://github.com/We-Are-One-CS/wao-docs
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/We-Are-One-CS
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
