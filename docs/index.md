@@ -1,3 +1,3 @@
-# Bienvenue à la documentation du projet WAO Intranet
+# Bienvenue sur la documentation du projet WAO Intranet
 
 ##  
