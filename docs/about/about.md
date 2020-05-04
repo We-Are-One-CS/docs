@@ -4,6 +4,6 @@ Pour notre projet WAO intranet nous avons utilisé Django pour le code et Postgr
 
 1. `Django 2.2.10`
 2. `Python 3.7.4`
-3. `PstgreSQL 10`
+3. `PostgreSQL 10`
 
-Pour plus d'information, voir `requierements.txt`
+Pour plus d'information, voir `requirements.txt`
