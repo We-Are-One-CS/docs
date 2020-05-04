@@ -55,6 +55,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pour-creer-une-nouvelle-fonctionnalite-vous-devez" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -668,9 +673,40 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Comment ajouter une fonctionnalité
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Comment ajouter une fonctionnalité" class="md-nav__link md-nav__link--active">
       Comment ajouter une fonctionnalité
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pour-creer-une-nouvelle-fonctionnalite-vous-devez" class="md-nav__link">
+    Pour créer une nouvelle fonctionnalité vous devez :
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -831,6 +867,36 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pour-creer-une-nouvelle-fonctionnalite-vous-devez" class="md-nav__link">
+    Pour créer une nouvelle fonctionnalité vous devez :
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -846,7 +912,15 @@
                 
                   <h1>Comment ajouter une fonctionnalité</h1>
                 
-                
+                <h3 id="pour-creer-une-nouvelle-fonctionnalite-vous-devez">Pour créer une nouvelle fonctionnalité vous devez :<a class="headerlink" href="#pour-creer-une-nouvelle-fonctionnalite-vous-devez" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Créer une url correspondant à la page dédiée à votre fonctionnalité dans le fichier <a href="https://docs.djangoproject.com/en/3.0/topics/http/urls/"><code>wao/urls.py</code></a></li>
+<li>Créer le fichier html correspondant à votre nouvelle page dans le dossier <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><code>wao/templates/wao</code></a></li>
+<li>Créer les requêtes ayant un lien avec votre nouvelle page dans le fichier <a href="https://docs.djangoproject.com/en/3.0/topics/http/views/"><code>wao/views.py</code></a></li>
+<li>Si votre fonctionnalité nécessite un formulaire, vous devez le créer dans le fichier<a href="https://docs.djangoproject.com/en/3.0/ref/forms/"><code>wao/forms.py</code></a></li>
+<li>Pour modifier l'apparence de votre page vous devez créer un fichier css corespondant à votre page dans le dossier <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"><code>wao/static/wao/css</code></a></li>
+<li>Si vous souhaitez ajouter des images et des polices pour votre page, ceci se fera dans le dossier <code>wao/static/wao</code></li>
+</ul>
                 
               
               

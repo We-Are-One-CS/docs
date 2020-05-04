@@ -846,7 +846,29 @@
                 
                   <h1>Executer le server en local</h1>
                 
-                
+                <p>Clonez le projet sur votre PC et changez le répertoire : </p>
+<div class="codehilite"><pre><span></span><code>$ git clone git@github.com:We-Are-One-CS/intranet.git
+$ <span class="nb">cd</span> intranet/
+</code></pre></div>
+
+
+<p>Migrez la base de donnée : </p>
+<div class="codehilite"><pre><span></span><code>$ python manage.py makemigrations wao 
+
+$ python manage.py migrate --noinput
+</code></pre></div>
+
+
+<p>lancez l'application sur un server Django : </p>
+<div class="codehilite"><pre><span></span><code>$ python manage.py runserver
+</code></pre></div>
+
+
+<p>Maintenant vous devriez voir votre application en tapant http://127.0.0.1:8000 dans votre moteur de recherche. </p>
+<p>Quand vous avez fini, n'oublez pas de quitter le server : </p>
+<div class="codehilite"><pre><span></span><code>Quit the server with CTRL-BREAK
+<span class="o">(</span>In Windows<span class="o">)</span> Ctrl + C
+</code></pre></div>
                 
               
               
