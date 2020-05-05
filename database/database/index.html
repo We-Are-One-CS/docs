@@ -55,6 +55,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#base-de-donnees" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -499,10 +504,80 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        BDD
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
     <a href="./" title="BDD" class="md-nav__link md-nav__link--active">
       BDD
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#specifications" class="md-nav__link">
+    Spécifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-avec-heroku" class="md-nav__link">
+    Commandes avec Heroku
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiche-technique" class="md-nav__link">
+    Fiche technique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableaux" class="md-nav__link">
+    Tableaux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    Relations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comment-stocker-les-donnees" class="md-nav__link">
+    Comment stocker les données
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -831,6 +906,73 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#specifications" class="md-nav__link">
+    Spécifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-avec-heroku" class="md-nav__link">
+    Commandes avec Heroku
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fiche-technique" class="md-nav__link">
+    Fiche technique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableaux" class="md-nav__link">
+    Tableaux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    Relations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comment-stocker-les-donnees" class="md-nav__link">
+    Comment stocker les données
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -844,11 +986,105 @@
                   
                 
                 
-                  <h1>BDD</h1>
-                
-                <p>L'application WAO intranet contient différentes bases de données, ces dernière sont implémentées dans le fichier <code>wao/models.py</code></p>
+                <h1 id="base-de-donnees">Base de données<a class="headerlink" href="#base-de-donnees" title="Permanent link">&para;</a></h1>
+<p>Ce dossier vise à expliquer les principales relations de la base de données
+La base de données principale, ses tableaux, la manière dont les données sont stockées et montrent une image globale de notre base de données</p>
+<p>L'application WAO intranet contient différentes bases de données, ces dernière sont implémentées dans le fichier <code>wao/models.py</code></p>
 <p>Si l'on souhaite créer une nouvelle base de donnée il faudra le faire dans ce fichier.</p>
 <p>Pour plus d'information sur les bases de données sur Django, veuillez consulter la <a href="https://docs.djangoproject.com/en/3.0/topics/db/models/"><code>documentation</code></a> </p>
+<h2 id="specifications">Spécifications<a class="headerlink" href="#specifications" title="Permanent link">&para;</a></h2>
+<p>Service : heroku-postgresql</p>
+<ul>
+<li>PLAN : <a href="https://devcenter.heroku.com/articles/heroku-postgres-plans">standard-0</a></li>
+<li>
+<p>Application de facturation : à chaud</p>
+</li>
+<li>
+<p>Région : Paris</p>
+</li>
+<li>Primaire : Oui</li>
+<li>Version : </li>
+<li>Création : </li>
+<li>Sauvegardes : </li>
+<li>Tableaux : </li>
+<li>Utilisation : </li>
+</ul>
+<h2 id="commandes-avec-heroku">Commandes avec Heroku<a class="headerlink" href="#commandes-avec-heroku" title="Permanent link">&para;</a></h2>
+<p>Utilisez le <a href="https://devcenter.heroku.com/articles/heroku-command-line">Heroku CLI</a> pour accéder aux journaux à partir de la ligne de commande</p>
+<div class="codehilite"><pre><span></span><code>heroku logs --tail --ps postgres --app brasa
+</code></pre></div>
+
+
+<p>Pour se connecter à la base de données (OBS : Il est préférable d'utiliser le DataGrip)</p>
+<div class="codehilite"><pre><span></span><code>heroku psql --app brasa
+</code></pre></div>
+
+
+<p>Pour racheter les références de la banque</p>
+<div class="codehilite"><pre><span></span><code>heroku pg:credentials:url --app brasa
+</code></pre></div>
+
+
+<p>Aide pour afficher des informations sur la base de données</p>
+<div class="codehilite"><pre><span></span><code>heroku pg --app brasa --help
+</code></pre></div>
+
+
+<p>Pour plus d'informations</p>
+<div class="codehilite"><pre><span></span><code>heroku <span class="nb">help</span>
+</code></pre></div>
+
+
+<h2 id="fiche-technique">Fiche technique<a class="headerlink" href="#fiche-technique" title="Permanent link">&para;</a></h2>
+<p>Les dataclips sont essentiellement des requêtes SQL qui peuvent être partagées avec des collègues par le biais de Heroku.
+Si vous souhaitez faire une demande que vous jugez intéressante à partager avec l'équipe, n'hésitez pas à ajouter <a href="https://data.heroku.com/dataclips">ici</a>.</p>
+<ul>
+<li>Pour plus d'informations : <a href="https://devcenter.heroku.com/articles/dataclips">documentation</a></li>
+</ul>
+<h2 id="tableaux">Tableaux<a class="headerlink" href="#tableaux" title="Permanent link">&para;</a></h2>
+<p>Pour visualiser les tableaux et leurs relations, nous pouvons utiliser le DataGrip et les exporter en format pdf.
+Une version est disponible en <a href="">pdf</a>. </p>
+<p>Pour trouver le diagramme des relations, il suffit de se rendre dans le dossier "tables", de cliquer avec le bouton droit de la souris
+sélectionnez "Diagrammes" et "Afficher la visualisation". Ou utilisez le raccourci "Ctrl+Alt+Shift+U".</p>
+<h2 id="relations">Relations<a class="headerlink" href="#relations" title="Permanent link">&para;</a></h2>
+<p>Dans la théorie des bases de données relationnelles, il existe 3 principaux types de relations :</p>
+<ol>
+<li>"Un à un (1 - 1)" :
+Une ligne d'un champ de table est liée à un seul autre élément de la table.
+Par exemple, nous avons les relations "membre" et "utilisateur". Le membre et l'utilisateur doivent être la même personne. Ils représentent alors un seul élément.
+2) "Un à plusieurs (1 - n)" : un élément d'un champ dans un tableau peut être lié à plusieurs autres éléments d'un autre tableau.
+Par exemple, nous avons des relations "ville" et "pays". Une ville ne peut avoir qu'un seul pays, mais un pays peut avoir plusieurs villes.</li>
+<li>"Beaucoup à beaucoup (n - n)" : la relation de pluralité est aller-retour. Par exemple, "utilisateur" et "événement". 
+Un utilisateur peut avoir plusieurs événements et un événement peut avoir plusieurs utilisateurs.</li>
+</ol>
+<h2 id="comment-stocker-les-donnees">Comment stocker les données<a class="headerlink" href="#comment-stocker-les-donnees" title="Permanent link">&para;</a></h2>
+<p>Le stockage des données est très important. Nous devons prendre en considération les aspects suivants 
+en ajoutant des données à la base de données BRASA.</p>
+<p>1) <code>Données actuelles</code> : toujours traiter des données actuelles.
+2) <code>Exhaustivité des données</code> : les données doivent être complètes, pas de données corrompues ou incomplètes.
+3) <code>Propreté des données</code> : les données doivent être propres, aucune information ne doit s'ajouter à quoi que ce soit.
+4) <code>Normalisation des données</code> : Les données doivent être normalisées. On ne doit pas utiliser la même colonne de la base de données
+pour les données qui appartiennent à deux types de formatage différents.
+5) <code>Cohérence des données</code> : les données doivent être cohérentes. D'un point de vue d'homogénéité, de cohérence et de fermeté. 
+Il ne faut pas travailler avec des données qui sont brisées ou qui le seront à terme.</p>
+<p>Utilisez la commande :</p>
+<div class="codehilite"><pre><span></span><code>Command:     INSERT
+Description: create new rows in a table
+Syntax:
+[ WITH [ RECURSIVE ] with_query [, ...] ]
+INSERT INTO table_name [ AS alias ] [ ( column_name [, ...] ) ]
+</code></pre></div>
+
+
+<p>Pour plus d'informations :</p>
+<ul>
+<li>
+<p>Vidéo SQL : <a href="https://www.youtube.com/watch?v=u5pDdEKnbKA">CS50 SQL</a></p>
+</li>
+<li>
+<p>Cheatsheet SQL et autres informations : <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp">w3schools SQL</a> </p>
+</li>
+</ul>
                 
               
               
