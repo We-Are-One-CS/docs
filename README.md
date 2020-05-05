@@ -24,7 +24,7 @@
  
 1. Clone the repo
 ```sh
-git clone https://github.com/github_username/repo.git
+git clone https://github.com/We-Are-One-CS/wao-docs
 ```
 2. Follow the instruction in mkdocs.md
 ```sh
