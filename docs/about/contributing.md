@@ -1,9 +1,11 @@
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Ce sont les contributions qui font de la communauté open source un endroit si extraordinaire pour apprendre, inspirer et créer. Toutes les contributions que vous apportez sont **très appréciées**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Fork le projet (```fork```)
+- Créez votre branche "Feature" (```git checkout -b feature/AmazingFeature```)
+- Faites vos changements (```git commit -m 'Add some AmazingFeature'```)
+- Push votre Branch (```git push origin feature/AmazingFeature```)
+- Ouvrir un pull request (```PR```)
+
+Merci d'avance pour votre aide! ;)
