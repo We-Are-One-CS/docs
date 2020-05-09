@@ -12,4 +12,4 @@ GitHub sert uniquement à la mise en commun du code, ce dernier devra être fait
 Pour ce faire, il est conseiller d'utiliser [`PyCharm pro`](https://www.jetbrains.com/fr-fr/pycharm/download/#section=windows) qui est une IDE Python très fonctionnelle, ergonomique et pratique; surtout lorsqu'on travail avec GitHub.
 Pour prendre en main PyCharm vous pouvez allez visiter la [documentation dédiée](https://www.jetbrains.com/fr-fr/pycharm/documentation/)
 
-![voici à quoi ressemble l'interface pour le projet WAO intranet sur PyCharm](WAO_intranet_PyCharm.JPG)
+![voici à quoi ressemble l'interface pour le projet WAO intranet sur PyCharm](https://github.com/We-Are-One-CS/wao-docs/blob/master/img/WAO_intranet_PyCharm.JPG)
