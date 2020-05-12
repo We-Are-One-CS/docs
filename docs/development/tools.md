@@ -13,10 +13,10 @@ Pour ce faire, il est conseiller d'utiliser [`PyCharm pro`](https://www.jetbrain
 Pour prendre en main PyCharm vous pouvez allez visiter la [documentation dédiée](https://www.jetbrains.com/fr-fr/pycharm/documentation/)
 
 Voici à quoi ressemble le projet sur PyCharm:
-![exemple](https://github.com/We-Are-One-CS/wao-docs/blob/master/img/WAO_intranet_PyCharm.JPG)
+![exemple](/img/WAO_intranet_PyCharm.jpg)
 
 Vous pouvez update le projet simplement en cliquant sur ce bouton:
-![update projet](https://github.com/We-Are-One-CS/wao-docs/blob/master/img/update_projet_pycharm.JPG)
+![update projet](/img/update_projet_pycharm.JPG)
 
 Et effectuer une pull request en allant dans VCS/Git/Pull Request:
-![pull request](https://github.com/We-Are-One-CS/wao-docs/blob/master/img/pull_request_pycharm.JPG)
+![pull request](/img/pull_request_pycharm.JPG)
