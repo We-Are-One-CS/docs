@@ -55,6 +55,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deploy" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -355,10 +360,66 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Comment deploier le site
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
     <a href="./" title="Comment deploier le site" class="md-nav__link md-nav__link--active">
       Comment deploier le site
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#django-deployment-checklist" class="md-nav__link">
+    Django deployment checklist
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-check" class="md-nav__link">
+    Production check
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-avec-heroku" class="md-nav__link">
+    Deployment avec heroku
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation-dune-base-de-code-pour-le-deploiement-dheroku" class="md-nav__link">
+    Préparation d’une base de code pour le déploiement d’Heroku
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -831,6 +892,59 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#django-deployment-checklist" class="md-nav__link">
+    Django deployment checklist
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production-check" class="md-nav__link">
+    Production check
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-avec-heroku" class="md-nav__link">
+    Deployment avec heroku
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation-dune-base-de-code-pour-le-deploiement-dheroku" class="md-nav__link">
+    Préparation d’une base de code pour le déploiement d’Heroku
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -844,9 +958,46 @@
                   
                 
                 
-                  <h1>Comment deploier le site</h1>
-                
-                
+                <h1 id="deploy">Deploy<a class="headerlink" href="#deploy" title="Permanent link">&para;</a></h1>
+<p>Le déploiement de l'application weareone est toutes les activités qui rendent le web service disponible pour une utilisation.</p>
+<p>Les phases d'activité de déploiement sont:
+1. <code>Libération</code>: il s’agit parfois de déterminer les ressources nécessaires pour que le système fonctionne avec un rendement et une planification tolérables et/ou documenter les activités subséquentes du processus de déploiement. Donc, il faut savoir la taille des apps qui seront définis avec Heroku.
+2. <code>Installation et activation</code>: C'est fait avec heroku. On push la branch <code>local/production</code> (qui doit être testé) comme <code>heroku/master</code>.
+3. <code>Désactivation</code>: La pratique consistant à retirer des systèmes rarement utilisés ou obsolètes du service est souvent appelée retraite de demande ou déclassement des demandes. Pas besoin dans notre cas.
+4. <code>Désinstallation</code>: C’est la suppression d’un système qui n’est plus nécessaire. Pas besoin dans notre cas.
+5. <code>Mettre à jour</code>: Il se compose généralement de désactivation suivie d’installation. Il faut un devélopper pour maintainer les nouvelles versions de Django et python.
+6. <code>Mise à jour intégrée</code>: Windows update ou quelque chose comme ça. Pas applicable dans notre cas.
+7. <code>Suivi de la version</code>: Realisé dans <code>requirements.txt</code>.</p>
+<h2 id="django-deployment-checklist">Django deployment checklist<a class="headerlink" href="#django-deployment-checklist" title="Permanent link">&para;</a></h2>
+<p>Avant de deployer l'application, il faut savoir si elle est bonne pour être utilisé dans la vraie vie avec des personnes de We Are One. </p>
+<p>Pour cela, il faut exécuter le command</p>
+<div class="codehilite"><pre><span></span><code>python manage.py check --deploy
+</code></pre></div>
+
+
+<p>Ce command va vérifier la stabilité de l'application. Nous avons bien reglé des problèmes. Mais si vous ajoutez une autre fonctionnalité, il faut le faire.</p>
+<p>Pour plus d'informations concernant le Django checklist (on récommend la lecture fortement):</p>
+<p><a href="https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/">Django Checklist for deploy link</a></p>
+<h2 id="production-check">Production check<a class="headerlink" href="#production-check" title="Permanent link">&para;</a></h2>
+<p>Le <code>production check</code> est une feature de Heroku pour savoir si votre app est bien deployé ou pas.</p>
+<p>Les points sont:</p>
+<ol>
+<li>Heroku-18 Stack</li>
+<li>Dynos type (on récommend des dynos payés vu leur utilisation)</li>
+<li>Échec de la redondance des bancs à rouleaux</li>
+<li>Base de données des Postgres de Production Échoués</li>
+<li>Haute disponibilité de Postgres</li>
+<li>Surveillance de l'application en cas d'échec</li>
+<li>Surveillance du journal des défaillances</li>
+<li>Pages de maintenance personnalisées</li>
+<li>Heroku SSL</li>
+</ol>
+<p>Pour le serveur en production, on récommend avoir des réglagés bien gérés.</p>
+<h2 id="deployment-avec-heroku">Deployment avec heroku<a class="headerlink" href="#deployment-avec-heroku" title="Permanent link">&para;</a></h2>
+<p>Pour voir plus d'informations sur le deployment avec Heroku, le lien vers la documentation est:</p>
+<p><a href="https://devcenter.heroku.com/categories/deployment">Deployment - Heroku</a></p>
+<h2 id="preparation-dune-base-de-code-pour-le-deploiement-dheroku">Préparation d’une base de code pour le déploiement d’Heroku<a class="headerlink" href="#preparation-dune-base-de-code-pour-le-deploiement-dheroku" title="Permanent link">&para;</a></h2>
+<p><a href="https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment">Préparation d’une base de code pour le déploiement d’Heroku</a></p>
                 
               
               
