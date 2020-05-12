@@ -960,14 +960,30 @@
                 
                 <h1 id="deploy">Deploy<a class="headerlink" href="#deploy" title="Permanent link">&para;</a></h1>
 <p>Le déploiement de l'application weareone est toutes les activités qui rendent le web service disponible pour une utilisation.</p>
-<p>Les phases d'activité de déploiement sont:
-1. <code>Libération</code>: il s’agit parfois de déterminer les ressources nécessaires pour que le système fonctionne avec un rendement et une planification tolérables et/ou documenter les activités subséquentes du processus de déploiement. Donc, il faut savoir la taille des apps qui seront définis avec Heroku.
-2. <code>Installation et activation</code>: C'est fait avec heroku. On push la branch <code>local/production</code> (qui doit être testé) comme <code>heroku/master</code>.
-3. <code>Désactivation</code>: La pratique consistant à retirer des systèmes rarement utilisés ou obsolètes du service est souvent appelée retraite de demande ou déclassement des demandes. Pas besoin dans notre cas.
-4. <code>Désinstallation</code>: C’est la suppression d’un système qui n’est plus nécessaire. Pas besoin dans notre cas.
-5. <code>Mettre à jour</code>: Il se compose généralement de désactivation suivie d’installation. Il faut un devélopper pour maintainer les nouvelles versions de Django et python.
-6. <code>Mise à jour intégrée</code>: Windows update ou quelque chose comme ça. Pas applicable dans notre cas.
-7. <code>Suivi de la version</code>: Realisé dans <code>requirements.txt</code>.</p>
+<p>Les phases d'activité de déploiement sont:</p>
+<ol>
+<li>
+<p><code>Libération</code>: il s’agit parfois de déterminer les ressources nécessaires pour que le système fonctionne avec un rendement et une planification tolérables et/ou documenter les activités subséquentes du processus de déploiement. Donc, il faut savoir la taille des apps qui seront définis avec Heroku.</p>
+</li>
+<li>
+<p><code>Installation et activation</code>: C'est fait avec heroku. On push la branch <code>local/production</code> (qui doit être testé) comme <code>heroku/master</code>.</p>
+</li>
+<li>
+<p><code>Désactivation</code>: La pratique consistant à retirer des systèmes rarement utilisés ou obsolètes du service est souvent appelée retraite de demande ou déclassement des demandes. Pas besoin dans notre cas.</p>
+</li>
+<li>
+<p><code>Désinstallation</code>: C’est la suppression d’un système qui n’est plus nécessaire. Pas besoin dans notre cas.</p>
+</li>
+<li>
+<p><code>Mettre à jour</code>: Il se compose généralement de désactivation suivie d’installation. Il faut un devélopper pour maintainer les nouvelles versions de Django et python.</p>
+</li>
+<li>
+<p><code>Mise à jour intégrée</code>: Windows update ou quelque chose comme ça. Pas applicable dans notre cas.</p>
+</li>
+<li>
+<p><code>Suivi de la version</code>: Realisé dans <code>requirements.txt</code>.</p>
+</li>
+</ol>
 <h2 id="django-deployment-checklist">Django deployment checklist<a class="headerlink" href="#django-deployment-checklist" title="Permanent link">&para;</a></h2>
 <p>Avant de deployer l'application, il faut savoir si elle est bonne pour être utilisé dans la vraie vie avec des personnes de We Are One. </p>
 <p>Pour cela, il faut exécuter le command</p>
