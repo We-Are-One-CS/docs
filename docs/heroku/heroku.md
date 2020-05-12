@@ -1,4 +1,4 @@
-# Heroku: a clou application platform (PaaS)
+# Heroku: a cloud application platform (PaaS)
 
 Heroku est une website qui nous donne l'option de déployer notre application. 
 En fait, nous avons choisi de l'utiliser vu la taille de notre app et aussi le fait que c'est une première version de

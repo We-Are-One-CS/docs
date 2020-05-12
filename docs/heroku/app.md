@@ -1,4 +1,6 @@
 # weareone-intranet app 
+[Dashboard - Heroku](https://dashboard.heroku.com)
+
 Le lien pour une application sur Heroku est ``https://dashboard.heroku.com/apps/{weareone-intranet}``, où j'ai mis le nom
 de l'app entre ``{}``, bien sûr, la vrai url n'a pas ses symboles et compte avec le nome de l'app. 
 
@@ -35,3 +37,7 @@ En fait, les parties importantes, sont:
 - SSL Certificates: certificat pour le https
 - Domains: ajouter un domain (pas herokuapp.com)
 - Maintenance mode: Utilisé une fois que vous voulez changer quelque chose dans le site
+
+
+Pour plus d'informations:
+[Dashboard - Heroku](https://dashboard.heroku.com)

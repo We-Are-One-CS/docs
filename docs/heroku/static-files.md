@@ -1,0 +1,2 @@
+# Fichiers statiques
+
