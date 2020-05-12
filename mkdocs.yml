@@ -14,7 +14,6 @@ nav:
     - Comment deploier le site: deployment/deploy.md
     - Maintenance du site: deployment/maintenance.md
     - Server: deployment/server.md
-    - Gestion de possibles conflits: deployment/gestion-conflit.md
   - Admin:
     - Pour l'admin: admin/admin.md
     - Comment utiliser le site admin: admin/how-to-use.md
