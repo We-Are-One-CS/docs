@@ -2,12 +2,19 @@
 Le déploiement de l'application weareone est toutes les activités qui rendent le web service disponible pour une utilisation.
 
 Les phases d'activité de déploiement sont:
+
 1. `Libération`: il s’agit parfois de déterminer les ressources nécessaires pour que le système fonctionne avec un rendement et une planification tolérables et/ou documenter les activités subséquentes du processus de déploiement. Donc, il faut savoir la taille des apps qui seront définis avec Heroku.
+
 2. ``Installation et activation``: C'est fait avec heroku. On push la branch `local/production` (qui doit être testé) comme `heroku/master`.
+
 3. ``Désactivation``: La pratique consistant à retirer des systèmes rarement utilisés ou obsolètes du service est souvent appelée retraite de demande ou déclassement des demandes. Pas besoin dans notre cas.
+
 4. ``Désinstallation``: C’est la suppression d’un système qui n’est plus nécessaire. Pas besoin dans notre cas.
+
 5. ``Mettre à jour``: Il se compose généralement de désactivation suivie d’installation. Il faut un devélopper pour maintainer les nouvelles versions de Django et python.
+
 6. ``Mise à jour intégrée``: Windows update ou quelque chose comme ça. Pas applicable dans notre cas.
+
 7. ``Suivi de la version``: Realisé dans ``requirements.txt``.
 
 ## Django deployment checklist
