@@ -55,6 +55,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#donnees-sur-heroku" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -733,10 +738,73 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Données
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
     <a href="./" title="Données" class="md-nav__link md-nav__link--active">
       Données
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    Dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataclips" class="md-nav__link">
+    Dataclips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pour-plus-dinformations" class="md-nav__link">
+    Pour plus d'informations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -831,6 +899,66 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    Dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataclips" class="md-nav__link">
+    Dataclips
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pour-plus-dinformations" class="md-nav__link">
+    Pour plus d'informations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -844,9 +972,27 @@
                   
                 
                 
-                  <h1>Données</h1>
-                
-                
+                <h1 id="donnees-sur-heroku">Données sur Heroku<a class="headerlink" href="#donnees-sur-heroku" title="Permanent link">&para;</a></h1>
+<p><a href="https://data.heroku.com/">Heroku - Données</a></p>
+<p>On peut penser a une application sur Heroku comme étant une ensemble de micro-services.
+C'est-à-dire, il aura le dyno pour l'application web, après il aura l'add-on PostgreSQL pour gérer la base de données
+et finalmente, si vous voulez ajouter d'autre chose, vous pouvez les ajouter (par exemple, un service de recherche des données, moteur de recherche elastique, etc).</p>
+<p>Finalement, pour tout le donnée du deploy, il faut utiliser la partie data de Heroku.</p>
+<h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">&para;</a></h2>
+<p>Ici, on peut voir l'application et ses definitions.
+C'est vraiment important de voir les variables d'environment et les laisser toujours sécretes.
+Elles ont un rôle important dans le fonctionnement de l'app.</p>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<p>Ici, il aura une liste de bases de données pour ajouter à l'application. Avec ses types et beaucoup des options.</p>
+<p>Vous allez avoir l'option de changer la taille de la base, voir la quantité des tableaux disponibles, etc.</p>
+<h2 id="dataclips">Dataclips<a class="headerlink" href="#dataclips" title="Permanent link">&para;</a></h2>
+<p>Les dataclips sont des lignes de commande SQL, en fait, ils ont l'objectif de créer, modifier, supprimer des lignes de la base de données.</p>
+<p>Pour plus d'informations, allez dans la partie SQL de la documentation.</p>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<p><a href="https://devcenter.heroku.com/">Documentation pour heroku</a></p>
+<h2 id="pour-plus-dinformations">Pour plus d'informations<a class="headerlink" href="#pour-plus-dinformations" title="Permanent link">&para;</a></h2>
+<p><a href="https://data.heroku.com/">Heroku - Données</a></p>
+<p><a href="https://data.heroku.com/">Heroku - Support</a></p>
                 
               
               
