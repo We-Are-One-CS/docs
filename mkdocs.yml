@@ -6,7 +6,6 @@ nav:
     - Informations globales: about/about.md
     - Contributions: about/contributing.md
     - License: about/license.md
-    - Notes de release: about/release-notes.md
   - Deploiement & Production:
     - Comment deploier le site: deployment/deploy.md
     - Maintenance du site: deployment/maintenance.md
