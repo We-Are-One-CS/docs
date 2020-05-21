@@ -26,7 +26,6 @@ nav:
     - Outils de development: development/tools.md
     - Branch dev du site: development/dev.md
     - Executer le server en local: development/run-project-locally.md
-    - Set up du projet: development/set-up-project.md
     - Comment ajouter une fonctionnalité: development/adding-feature.md
     - Tests: development/testing.md
   - Heroku:
