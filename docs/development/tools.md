@@ -9,14 +9,17 @@ Pour prendre en main GitHub est pour comprendre son fonctionnement, n'hésitez p
 ### Coder en local
 
 GitHub sert uniquement à la mise en commun du code, ce dernier devra être fait en local. 
-Pour ce faire, il est conseiller d'utiliser [`PyCharm pro`](https://www.jetbrains.com/fr-fr/pycharm/download/#section=windows) qui est une IDE Python très fonctionnelle, ergonomique et pratique; surtout lorsqu'on travail avec GitHub.
+Pour ce faire, il est conseiller d'utiliser [`PyCharm Pro`](https://www.jetbrains.com/fr-fr/pycharm/download/#section=windows) qui est une IDE Python très fonctionnelle, ergonomique et pratique; surtout lorsqu'on travail avec GitHub.
 Pour prendre en main PyCharm vous pouvez allez visiter la [documentation dédiée](https://www.jetbrains.com/fr-fr/pycharm/documentation/)
 
-Voici à quoi ressemble le projet sur PyCharm:
-![exemple](/img/WAO_intranet_PyCharm.jpg)
+Voici à quoi ressemble le projet sur ``PyCharm Pro``:
 
-Vous pouvez update le projet simplement en cliquant sur ce bouton:
-![update projet](/img/update_projet_pycharm.JPG)
+![PyCharm Pro - intranet](../img/development/intranet.jpg)
 
-Et effectuer une pull request en allant dans VCS/Git/Pull Request:
-![pull request](/img/pull_request_pycharm.JPG)
+Vous pouvez ``update le projet`` simplement en cliquant sur ce bouton:
+
+![update projet](../img/development/update.jpg)
+
+Et effectuer une ``pull request`` en allant dans ``VCS/Git/Pull Request``:
+
+![pull request](../img/development/pr.jpg)
