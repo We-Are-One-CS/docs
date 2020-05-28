@@ -21,7 +21,7 @@ $ python manage.py runserver
 Maintenant vous devriez voir votre application en tapant http://127.0.0.1:8000 dans votre moteur de recherche. 
 
 
-Quand vous avez fini, n'oublez pas de quitter le server : 
+Quand vous aurez fini, n'oubliez pas de quitter le server : 
 
 ```bash
 Quit the server with CTRL-BREAK

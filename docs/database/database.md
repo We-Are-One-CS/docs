@@ -1,12 +1,11 @@
 
 # Base de données
 
-Ce dossier vise à expliquer les principales relations de la base de données
-La base de données principale, ses tableaux, la manière dont les données sont stockées et montrent une image globale de notre base de données
+Ce dossier vise à expliquer les principales relations de la base de données; la base de données principale, ses tableaux, la manière dont les données sont stockées ainsi qu'à donner une image globale de notre base de données.
 
 L'application WAO intranet contient différentes bases de données, ces dernière sont implémentées dans le fichier `wao/models.py`
 
-Si l'on souhaite créer une nouvelle base de donnée il faudra le faire dans ce fichier.
+Si l'on souhaite créer une nouvelle base de données, il faudra le faire dans ce fichier.
 
 Pour plus d'information sur les bases de données sur Django, veuillez consulter la [`documentation`](https://docs.djangoproject.com/en/3.0/topics/db/models/) 
 
@@ -55,7 +54,7 @@ heroku help
 ## Fiche technique
 
 Les dataclips sont essentiellement des requêtes SQL qui peuvent être partagées avec des collègues par le biais de Heroku.
-Si vous souhaitez faire une demande que vous jugez intéressante à partager avec l'équipe, n'hésitez pas à ajouter [ici](https://data.heroku.com/dataclips).
+Si vous souhaitez faire une demande que vous jugez intéressante à partager avec l'équipe, n'hésitez pas à l'ajouter [ici](https://data.heroku.com/dataclips).
 
 
 - Pour plus d'informations : [documentation](https://devcenter.heroku.com/articles/dataclips)
@@ -64,8 +63,7 @@ Si vous souhaitez faire une demande que vous jugez intéressante à partager ave
 Pour visualiser les tableaux et leurs relations, nous pouvons utiliser le DataGrip et les exporter en format pdf.
 Une version est disponible en [pdf](). 
 
-Pour trouver le diagramme des relations, il suffit de se rendre dans le dossier "tables", de cliquer avec le bouton droit de la souris
-sélectionnez "Diagrammes" et "Afficher la visualisation". Ou utilisez le raccourci "Ctrl+Alt+Shift+U".
+Pour trouver le diagramme des relations, il suffit de se rendre dans le dossier "tables", cliquer avec le bouton droit de la souris et sélectionner "Diagrammes" et "Afficher la visualisation", ou d'utiliser le raccourci "Ctrl+Alt+Shift+U".
 
 
 ## Relations
@@ -82,7 +80,7 @@ Un utilisateur peut avoir plusieurs événements et un événement peut avoir pl
 ## Comment stocker les données
 
 Le stockage des données est très important. Nous devons prendre en considération les aspects suivants 
-en ajoutant des données à la base de données BRASA.
+en ajoutant des données à la base de données BRASA :
 
 1) ```Données actuelles``` : toujours traiter des données actuelles.
 2) ```Exhaustivité des données``` : les données doivent être complètes, pas de données corrompues ou incomplètes.

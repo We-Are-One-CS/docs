@@ -10,6 +10,6 @@ Matheus Elyasha Lopes : matheus-elyasha.lopes@student-cs.fr
 
 Nouha Manai : nouha.manai@student-cs.fr
 
-Thimoté Montel : thimote.montel@student-cs.fr
+Timothé Montel : timothe.montel@student-cs.fr
 
 Ali Raiki : ali.raiki@student-cs.fr

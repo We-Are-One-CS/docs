@@ -2,7 +2,7 @@
 
 SQL est un langage informatique normalisé servant à exploiter des bases de données relationnelles.
 En fait, dans notre projet, on n'a pas forcément besoin d'utiliser SQL vu que Django, le framework utilisé, est déjà capable
-de bien régler notre base de données. Par contre, si jamais vous avez besoin de réaliser un étude plus robuste. Vous devez penser 
+de bien régler notre base de données. Par contre, si jamais vous avez besoin de réaliser une étude plus robuste, vous devez penser 
 si SQL n'est pas la bonne réponse.
 
 [Cours et tutoriels sur le language SQL](https://sql.sh/)
