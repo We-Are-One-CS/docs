@@ -10,7 +10,7 @@ En plus de l'API d'accès aux données, une interface d'administration fonctionn
 
 Sont également inclus :
 * un serveur web léger permettant de développer et tester ses applications en temps réel sans déploiement ;
-* un système élaboré de traitement des formulaires muni de widgets permettant d'interagir entre du HTML et une base de données. De nombreuses possibilités de contrôles et de traitements sont fournies ;
+* un système élaboré de traitement des formulaires muni de widgets permettant d'interagir entre du HTML et une base de données. Nombreuses possibilités de contrôles et de traitements sont fournies ;
 * un cadre de cache web pouvant utiliser différentes méthodes (MemCached, système de fichier, base de données, personnalisé) ;
 * le support de classes intermédiaires (intergiciel) qui peuvent être placées à des stades variés du traitement des requêtes pour intégrer des traitements particuliers (cache, internationalisation, accès…) ;
 * une prise en charge complète d'Unicode.
