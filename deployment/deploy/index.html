@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
@@ -19,9 +19,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.18ac144a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a2408e81.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -870,47 +870,47 @@
                 
                 
                 <h1 id="deploy">Deploy<a class="headerlink" href="#deploy" title="Permanent link">&para;</a></h1>
-<p>Le déploiement de l'application weareone est toutes les activités qui rendent le web service disponible pour une utilisation.</p>
+<p>Le déploiement de l'application weareone et toutes les activités qui rendent le web service disponible pour une utilisation.</p>
 <p>Les phases d'activité de déploiement sont:</p>
 <ol>
 <li>
-<p><code>Libération</code>: il s’agit parfois de déterminer les ressources nécessaires pour que le système fonctionne avec un rendement et une planification tolérables et/ou documenter les activités subséquentes du processus de déploiement. Donc, il faut savoir la taille des apps qui seront définis avec Heroku.</p>
+<p><code>Libération</code>: il s’agit parfois de déterminer les ressources nécessaires pour que le système fonctionne avec un rendement et une planification tolérables et/ou documenter les activités subséquentes du processus de déploiement. Donc, il faut savoir la taille des apps qui seront définies avec Heroku.</p>
 </li>
 <li>
-<p><code>Installation et activation</code>: C'est fait avec heroku. On push la branch <code>local/production</code> (qui doit être testé) comme <code>heroku/master</code>.</p>
+<p><code>Installation et activation</code>: C'est fait avec Heroku. On push la branche <code>local/production</code> (qui doit être testée) comme <code>heroku/master</code>.</p>
 </li>
 <li>
 <p><code>Désactivation</code>: La pratique consistant à retirer des systèmes rarement utilisés ou obsolètes du service est souvent appelée retraite de demande ou déclassement des demandes. Pas besoin dans notre cas.</p>
 </li>
 <li>
-<p><code>Désinstallation</code>: C’est la suppression d’un système qui n’est plus nécessaire. Pas besoin dans notre cas.</p>
+<p><code>Désinstallation</code>: C’est la suppression d’un système qui n’est plus nécessaire. On n'en a pas besoin dans notre cas.</p>
 </li>
 <li>
-<p><code>Mettre à jour</code>: Il se compose généralement de désactivation suivie d’installation. Il faut un devélopper pour maintainer les nouvelles versions de Django et python.</p>
+<p><code>Mettre à jour</code>: Il se compose généralement de désactivation suivie d’installation. Il faut un développeur pour maintenir les nouvelles versions de Django et Python.</p>
 </li>
 <li>
-<p><code>Mise à jour intégrée</code>: Windows update ou quelque chose comme ça. Pas applicable dans notre cas.</p>
+<p><code>Mise à jour intégrée</code>: Windows update ou équivalent. Ce n'est pas applicable dans notre cas.</p>
 </li>
 <li>
 <p><code>Suivi de la version</code>: Realisé dans <code>requirements.txt</code>.</p>
 </li>
 </ol>
 <h2 id="django-deployment-checklist">Django deployment checklist<a class="headerlink" href="#django-deployment-checklist" title="Permanent link">&para;</a></h2>
-<p>Avant de deployer l'application, il faut savoir si elle est bonne pour être utilisé dans la vraie vie avec des personnes de We Are One. </p>
-<p>Pour cela, il faut exécuter le command</p>
+<p>Avant de deployer l'application, il faut savoir si elle est bonne pour être utilisée dans la vraie vie avec des personnes de We Are One. </p>
+<p>Pour cela, il faut exécuter la commande:</p>
 <div class="codehilite"><pre><span></span><code>python manage.py check --deploy
 </code></pre></div>
 
 
-<p>Ce command va vérifier la stabilité de l'application. Nous avons bien reglé des problèmes. Mais si vous ajoutez une autre fonctionnalité, il faut le faire.</p>
-<p>Pour plus d'informations concernant le Django checklist (on récommend la lecture fortement):</p>
+<p>Cette commande va vérifier la stabilité de l'application. Nous avons bien réglé des problèmes, mais si vous ajoutez une autre fonctionnalité, il faut penser à le faire.</p>
+<p>Pour plus d'informations concernant la Django checklist (on recommande fortement la lecture):</p>
 <p><a href="https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/">Django Checklist for deploy link</a></p>
 <h2 id="production-check">Production check<a class="headerlink" href="#production-check" title="Permanent link">&para;</a></h2>
-<p>Le <code>production check</code> est une feature de Heroku pour savoir si votre app est bien deployé ou pas.</p>
-<p>Les points sont:</p>
+<p>La <code>production check</code> est une feature de Heroku pour savoir si votre application est bien deployée.</p>
+<p>Les points à vérifier sont:</p>
 <ol>
 <li>Heroku-18 Stack</li>
-<li>Dynos type (on récommend des dynos payés vu leur utilisation)</li>
+<li>Dynos type (on recommande des dynos payés vu leur utilisation)</li>
 <li>Échec de la redondance des bancs à rouleaux</li>
 <li>Base de données des Postgres de Production Échoués</li>
 <li>Haute disponibilité de Postgres</li>
@@ -919,9 +919,9 @@
 <li>Pages de maintenance personnalisées</li>
 <li>Heroku SSL</li>
 </ol>
-<p>Pour le serveur en production, on récommend avoir des réglagés bien gérés.</p>
+<p>Pour le serveur en production, on recommande d'avoir des réglages bien gérés.</p>
 <h2 id="deployment-avec-heroku">Deployment avec heroku<a class="headerlink" href="#deployment-avec-heroku" title="Permanent link">&para;</a></h2>
-<p>Pour voir plus d'informations sur le deployment avec Heroku, le lien vers la documentation est:</p>
+<p>Pour avoir plus d'informations sur le deployment avec Heroku, le lien vers la documentation est:</p>
 <p><a href="https://devcenter.heroku.com/categories/deployment">Deployment - Heroku</a></p>
 <h2 id="preparation-dune-base-de-code-pour-le-deploiement-dheroku">Préparation d’une base de code pour le déploiement d’Heroku<a class="headerlink" href="#preparation-dune-base-de-code-pour-le-deploiement-dheroku" title="Permanent link">&para;</a></h2>
 <p><a href="https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment">Préparation d’une base de code pour le déploiement d’Heroku</a></p>

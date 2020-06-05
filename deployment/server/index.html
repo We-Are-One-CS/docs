@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
@@ -19,9 +19,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.18ac144a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a2408e81.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -856,13 +856,13 @@
                 
                 
                 <h1 id="serveur">Serveur<a class="headerlink" href="#serveur" title="Permanent link">&para;</a></h1>
-<p>Pour gérér le serveur, on récommend que la personne chargé regarde le <a href="https://devcenter.heroku.com/articles/getting-started-with-python">tutoriel d'utilisation python avec heroku</a>, il y a beaucoup 
-des notions importantes pour gérér l'application.</p>
+<p>Pour gérér le serveur, on recommande que la personne chargée regarde le <a href="https://devcenter.heroku.com/articles/getting-started-with-python">tutoriel d'utilisation python avec heroku</a>, il y a beaucoup 
+de notions importantes pour gérér l'application.</p>
 <h2 id="visualiser-les-fichiers-logs">Visualiser les fichiers logs<a class="headerlink" href="#visualiser-les-fichiers-logs" title="Permanent link">&para;</a></h2>
 <p>Heroku traite les journaux (fichiers logs) comme des flux d’événements commandés dans le temps agrégés à partir des flux de sortie de toutes vos applications et des composants Heroku, fournissant un canal unique pour tous les événements.</p>
-<p>Affichez des informations sur votre application en cours d’exécution à l’aide d’une des commandes de journalisation, <code>heroku logs --tail</code></p>
+<p>Affichez des informations sur votre application en cours d’exécution à l’aide d’une des commandes de journalisation <code>heroku logs --tail</code></p>
 <h2 id="echelle-de-lapplication">Échelle de l'application<a class="headerlink" href="#echelle-de-lapplication" title="Permanent link">&para;</a></h2>
-<p>Vous pouvez vérifier combien de dynos sont en cours d’exécution à l’aide de la commande: <code>ps</code></p>
+<p>Vous pouvez vérifier combien de dynos sont en cours d’exécution à l’aide de la commande <code>ps</code> :</p>
 <div class="codehilite"><pre><span></span><code>$ heroku ps
 Free dyno hours quota remaining this month: 999h 6m <span class="o">(</span><span class="m">99</span>%<span class="o">)</span>
 Free dyno usage <span class="k">for</span> this app: 0h 0m <span class="o">(</span><span class="m">0</span>%<span class="o">)</span>
@@ -875,8 +875,9 @@ web.1: up <span class="m">2018</span>/10/12 <span class="m">14</span>:26:45 -050
 
 
 <p>Par défaut, votre application est déployée sur un dyno gratuit. Les dynos gratuits dormiront après une demi-heure d’inactivité (s’ils ne reçoivent pas de trafic). Cela entraîne un retard de quelques secondes pour la première demande au réveil. Les demandes subséquentes fonctionneront normalement. Les dynos gratuits consomment également à partir d’un quota mensuel de dyno gratuit - tant que le quota n’est pas épuisé, toutes les applications gratuites peuvent continuer à fonctionner.</p>
-<p>Pour éviter le sommeil de dyno, vous pouvez passer à un passe-temps ou un type de dyno professionnel tel que décrit dans l’article Dyno Types. Par exemple, si vous migrez votre application vers un dyno professionnel, vous pouvez facilement l’évolur en exécutant une commande indiquant à Heroku d’exécuter un nombre spécifique de dynos, chacun exécutant votre type de processus Web.</p>
-<p>L’échelle d’une application sur Heroku équivaut à modifier le nombre de dynos qui sont en cours d’exécution. Échelle du nombre de dynos web à zéro:</p>
+<p>Pour éviter le sommeil du dyno, vous pouvez passer à un passe-temps ou un type de dyno professionnel tel que décrit dans l’article Dyno Types. Par exemple, si vous migrez votre application vers un dyno professionnel, vous pouvez l’évoluer facilement en exécutant une commande indiquant à Heroku d’exécuter un nombre spécifique de dynos, chacun exécutant votre type de processus Web.</p>
+<p>L’échelle d’une application sur Heroku équivaut à modifier le nombre de dynos qui sont en cours d’exécution.</p>
+<p>Échelle du nombre de dynos web à zéro:</p>
 <div class="codehilite"><pre><span></span><code>heroku ps:scale <span class="nv">web</span><span class="o">=</span><span class="m">0</span>
 </code></pre></div>
 
@@ -887,7 +888,7 @@ web.1: up <span class="m">2018</span>/10/12 <span class="m">14</span>:26:45 -050
 
 
 <h2 id="demarrer-une-console">Démarrer une console<a class="headerlink" href="#demarrer-une-console" title="Permanent link">&para;</a></h2>
-<p>Vous pouvez exécuter une commande, généralement des scripts et des applications qui font partie de votre application, dans un dyno unique en utilisant la commande. Il peut également être utilisé pour lancer un processus REPL attaché à votre terminal local pour expérimenter dans l’environnement de votre application: <code>heroku run</code></p>
+<p>Vous pouvez exécuter une commande, généralement des scripts et des applications qui font partie de votre application, dans un dyno unique en utilisant la commande <code>heroku run</code>. Elle peut être utilisée également pour lancer un processus REPL attaché à votre terminal local pour expérimenter dans l’environnement de votre application: </p>
 <div class="codehilite"><pre><span></span><code>$ heroku run python manage.py shell
 Python <span class="m">3</span>.7.6 <span class="o">(</span>default, Dec <span class="m">23</span> <span class="m">2019</span>, <span class="m">04</span>:25:22<span class="o">)</span>
 <span class="o">[</span>GCC <span class="m">7</span>.4.0<span class="o">]</span> on linux
@@ -897,9 +898,9 @@ Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&
 </code></pre></div>
 
 
-<p>Si vous recevez une erreur, alors vous devrez peut-être configurer votre pare-feu. <code>Error connecting to process</code></p>
+<p>Si vous recevez une erreur <code>Error connecting to process</code>, alors vous devrez peut-être configurer votre pare-feu. </p>
 <p>La coque Python est en cours d’exécution dans le contexte de votre application et toutes ses dépendances. De là, vous pouvez importer certains de vos fichiers d’application.</p>
-<p>Pour avoir une idée réelle de la façon dont les dynos fonctionnent, vous pouvez créer un autre dyno unique et exécuter la commande, qui ouvre une coquille sur ce dyno. Vous pouvez ensuite y exécuter des commandes. Chaque dyno a son propre espace de fichier éphémère, peuplé de votre application et de ses dépendances - une fois que la commande terminée (dans ce cas, ), le dyno est supprimé.</p>
+<p>Pour avoir une idée réelle de la façon dont les dynos fonctionnent, vous pouvez créer un autre dyno unique et exécuter la commande, qui ouvre une coquille sur ce dyno. Vous pouvez ensuite y exécuter des commandes. Chaque dyno a son propre espace de fichiers éphémères, peuplé par votre application et ses dépendances. Dans ce cas, une fois que la commande terminée, le dyno est supprimé.</p>
 <div class="codehilite"><pre><span></span><code>$ heroku run bash
 Running <span class="sb">`</span>bash<span class="sb">`</span> attached to terminal... up, run.3052
 ~ $ ls
@@ -909,7 +910,7 @@ gettingstarted  hello  manage.py  Procfile  README.md  requirements.txt  runtime
 </code></pre></div>
 
 
-<p>N’oubliez pas de taper pour sortir de la coquille et mettre fin au dyno. <code>exit</code></p>
+<p>N’oubliez pas de taper <code>exit</code> pour sortir de la coquille et mettre fin au dyno. </p>
                 
               
               

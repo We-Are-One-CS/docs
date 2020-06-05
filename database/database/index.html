@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
@@ -19,9 +19,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.18ac144a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a2408e81.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -898,10 +898,9 @@
                 
                 
                 <h1 id="base-de-donnees">Base de données<a class="headerlink" href="#base-de-donnees" title="Permanent link">&para;</a></h1>
-<p>Ce dossier vise à expliquer les principales relations de la base de données
-La base de données principale, ses tableaux, la manière dont les données sont stockées et montrent une image globale de notre base de données</p>
+<p>Ce dossier vise à expliquer les principales relations de la base de données; la base de données principale, ses tableaux, la manière dont les données sont stockées ainsi qu'à donner une image globale de notre base de données.</p>
 <p>L'application WAO intranet contient différentes bases de données, ces dernière sont implémentées dans le fichier <code>wao/models.py</code></p>
-<p>Si l'on souhaite créer une nouvelle base de donnée il faudra le faire dans ce fichier.</p>
+<p>Si l'on souhaite créer une nouvelle base de données, il faudra le faire dans ce fichier.</p>
 <p>Pour plus d'information sur les bases de données sur Django, veuillez consulter la <a href="https://docs.djangoproject.com/en/3.0/topics/db/models/"><code>documentation</code></a> </p>
 <h2 id="specifications">Spécifications<a class="headerlink" href="#specifications" title="Permanent link">&para;</a></h2>
 <p>Service : heroku-postgresql</p>
@@ -948,15 +947,14 @@ La base de données principale, ses tableaux, la manière dont les données sont
 
 <h2 id="fiche-technique">Fiche technique<a class="headerlink" href="#fiche-technique" title="Permanent link">&para;</a></h2>
 <p>Les dataclips sont essentiellement des requêtes SQL qui peuvent être partagées avec des collègues par le biais de Heroku.
-Si vous souhaitez faire une demande que vous jugez intéressante à partager avec l'équipe, n'hésitez pas à ajouter <a href="https://data.heroku.com/dataclips">ici</a>.</p>
+Si vous souhaitez faire une demande que vous jugez intéressante à partager avec l'équipe, n'hésitez pas à l'ajouter <a href="https://data.heroku.com/dataclips">ici</a>.</p>
 <ul>
 <li>Pour plus d'informations : <a href="https://devcenter.heroku.com/articles/dataclips">documentation</a></li>
 </ul>
 <h2 id="tableaux">Tableaux<a class="headerlink" href="#tableaux" title="Permanent link">&para;</a></h2>
 <p>Pour visualiser les tableaux et leurs relations, nous pouvons utiliser le DataGrip et les exporter en format pdf.
 Une version est disponible en <a href="">pdf</a>. </p>
-<p>Pour trouver le diagramme des relations, il suffit de se rendre dans le dossier "tables", de cliquer avec le bouton droit de la souris
-sélectionnez "Diagrammes" et "Afficher la visualisation". Ou utilisez le raccourci "Ctrl+Alt+Shift+U".</p>
+<p>Pour trouver le diagramme des relations, il suffit de se rendre dans le dossier "tables", cliquer avec le bouton droit de la souris et sélectionner "Diagrammes" et "Afficher la visualisation", ou d'utiliser le raccourci "Ctrl+Alt+Shift+U".</p>
 <h2 id="relations">Relations<a class="headerlink" href="#relations" title="Permanent link">&para;</a></h2>
 <p>Dans la théorie des bases de données relationnelles, il existe 3 principaux types de relations :</p>
 <ol>
@@ -970,7 +968,7 @@ Un utilisateur peut avoir plusieurs événements et un événement peut avoir pl
 </ol>
 <h2 id="comment-stocker-les-donnees">Comment stocker les données<a class="headerlink" href="#comment-stocker-les-donnees" title="Permanent link">&para;</a></h2>
 <p>Le stockage des données est très important. Nous devons prendre en considération les aspects suivants 
-en ajoutant des données à la base de données BRASA.</p>
+en ajoutant des données à la base de données BRASA :</p>
 <p>1) <code>Données actuelles</code> : toujours traiter des données actuelles.
 2) <code>Exhaustivité des données</code> : les données doivent être complètes, pas de données corrompues ou incomplètes.
 3) <code>Propreté des données</code> : les données doivent être propres, aucune information ne doit s'ajouter à quoi que ce soit.
